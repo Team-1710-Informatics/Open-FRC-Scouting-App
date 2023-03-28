@@ -17,7 +17,7 @@
                 {#each match.alliances[all].team_keys as t}
                     <div class="relative w-14 h-8">
                         <button {disabled} on:click={()=>{team=+t.substring(3);alliance=all}} 
-                            style={+t.substring(3)==team?"top:4px":"box-shadow: 0px 4px black"} 
+                            style={+t.substring(3)==team&&all==alliance?"top:4px":"box-shadow: 0px 4px black"} 
                             class={`font-bold left-0 w-14 h-8 absolute bg-none border-none rounded-none ${all=="red"?"bg-red-700":"bg-blue-700"}`}
                         >
                             {t.substring(3)}

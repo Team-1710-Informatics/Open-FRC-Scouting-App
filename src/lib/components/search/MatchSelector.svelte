@@ -14,9 +14,8 @@
         if(event==null) {matches = null; return;}
         matches = "loading";
         const results = await tba(`event/${event}/matches`);
-        let out = await results.json()
 
-        matches = out;
+        matches = results;
     }
 
     function getMatch(level, number){

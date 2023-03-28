@@ -7,9 +7,7 @@ import { redirect } from "@sveltejs/kit";
 export async function load({ locals, url }) {
     if(!locals.user) throw redirect(307, "/login");
 
-    const res = await tba(`events/2023`);
-
-    const events = await res.json();
+    const events = await tba(`events/2023`);
 
     return{
         events,

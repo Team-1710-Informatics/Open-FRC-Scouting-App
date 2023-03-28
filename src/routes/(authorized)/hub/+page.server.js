@@ -2,7 +2,7 @@ import tba from '$lib/modules/tba';
 import { DateTime } from 'luxon';
 
 export async function load({ locals }){
-    const res = await tba(`team/frc${locals.user.team}/events/${new Date().getFullYear()}`);
+    const data = await tba(`team/frc${locals.user.team}/events/${new Date().getFullYear()}`);
 
     function timestamp(d, tz){
         let array = d.split("-");
@@ -10,7 +10,6 @@ export async function load({ locals }){
         return n.toMillis();
     }
 
-    const data = await res.json();
     let events = [];
     data.forEach(event=>{
         events.push({

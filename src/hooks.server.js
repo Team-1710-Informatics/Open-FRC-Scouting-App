@@ -22,7 +22,7 @@ export async function handle({ event, resolve }) {
     }
 
     let res = await tba(`team/frc${user.team}/events/${new Date().getFullYear()}`);
-    res = await res.json();
+    
     let c = currComp(res);
     let n = nextComp(res);
 
