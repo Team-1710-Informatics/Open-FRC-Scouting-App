@@ -4,7 +4,7 @@
     export let data:any;
 
     const links:[string, string, number, string?][] = [
-        ["Data", '/data/2023', 6, 'border-rose-600 bg-gradient-to-bl from-rose-600 to-red-300'],
+        ["View Data", '/data/2023', 6, 'text-black border-cyan-800 bg-gradient-to-t from-cyan-600 to-teal-300'],
         ["Scout Match", '/scout/2023', 6, 'submit'],
     ]
 </script>

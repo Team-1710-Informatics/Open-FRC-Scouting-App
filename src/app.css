@@ -111,8 +111,8 @@ button:disabled {
 }
 
 .submit {
-	background-image: linear-gradient(to bottom right, rgb(21, 128, 61), rgb(74, 222, 128));
-	border-color: rgb(21, 128, 61);
+	background-image: linear-gradient(to top, rgb(21, 128, 61), rgb(74, 222, 128));
+	border-color: rgb(16, 91, 43);
 }
 
 .error {

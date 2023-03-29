@@ -88,8 +88,9 @@ export const actions = {
             }
         } else data.error = "Something went wrong!";
 
+        console.log("signed up")
         if(data?.success) throw redirect(307, `/verify/${data.uname}/s`);
-        else return fail(500, data);
+        else {console.log("failure");return fail(500, data);}
     }
 }
 

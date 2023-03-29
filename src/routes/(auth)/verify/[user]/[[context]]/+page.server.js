@@ -3,7 +3,7 @@ import { User } from '$lib/server/models';
 
 export async function load({ params }) {
     // Verify that account exists and is unverified
-    const user = User.findOne({ username:params.user });
+    const user = await User.findOne({ username:params.user });
 
     if(!user?.flags?.verification_key) { throw redirect(308, "/login"); }
 
