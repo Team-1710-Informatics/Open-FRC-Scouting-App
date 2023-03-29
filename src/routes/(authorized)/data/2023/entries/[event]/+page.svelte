@@ -1,6 +1,6 @@
 <script>
     import MatchSelector from "$lib/components/search/MatchSelector.svelte";
-    import {teamScore, gridLayout} from "../spreadsheet/[event]/statistics";
+    import {teamScore, gridLayout} from "../../spreadsheet/[event]/statistics";
     import StarRating from "$lib/components/ui/StarRating.svelte";
     import cube from "$lib/assets/scout/2023/cube.png";
     import cone from "$lib/assets/scout/2023/cone.png";
