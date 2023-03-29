@@ -29,7 +29,6 @@ export async function handle({ event, resolve }) {
     event.locals.user = {
         username: user.username,
         name: user.name,
-        email: user.email,
         team: user.team,
         stats: user.stats,
         preferences: user.preferences,

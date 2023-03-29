@@ -1,6 +1,5 @@
 <script>
     import input from "$lib/assets/icons/input.svg";
-    import output from "$lib/assets/icons/output.svg";
     import { inv, nextID } from "./Inventory.svelte";
     import cube from "$lib/assets/scout/2023/cube.png";
     import cone from "$lib/assets/scout/2023/cone.png";

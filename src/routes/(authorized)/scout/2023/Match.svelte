@@ -69,14 +69,12 @@
         log.forEach(l=>{
             delete l.id
             if(l.action == "place"){
-                l.node++;
                 l.node={
                     x:l.node % 9,
                     y:Math.trunc(l.node/9)
                 }
             }
             if(l.action == "intake" && typeof l.location == "number"){
-                l.location++;
                 l.location={
                     x:l.location % 9,
                     y:Math.trunc(l.location/9)

@@ -5,7 +5,6 @@ mongoose.set('strictQuery', false);
 
 const user = new Schema({
     username: String,
-    email: String,
     name: {
         first: String,
         last: String

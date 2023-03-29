@@ -332,7 +332,7 @@ export function gridLayout(e:any){
     e.game.actions.forEach((a:any)=>{
         if(a.action === "place"){
             console.log(a.type);
-            out[a.node.y][a.node.x-1] = a.type;
+            out[a.node.y][a.node.x] = a.type;
         }
     })
 
