@@ -28,7 +28,7 @@ export const actions = {
     verify: async ({ request, params })=>{
         const input = await request.formData();
         const key = input.get("key");
-        const user = User.findOne({ username:params.user });
+        const user = await User.findOne({ username:params.user });
         
         if(key == user?.flags?.verification_key){
             user.flags.verification_key = "";
