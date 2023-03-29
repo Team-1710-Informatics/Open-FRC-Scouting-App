@@ -11,5 +11,5 @@
     </div>
     <br>
     <a disabled={!data.competition} href="./2023/spreadsheet/{data.competition}"><button disabled={!data.competition}>Spreadsheet</button></a>
-    <a href="./2023/entries"><button>Database</button></a>
+    <a disabled={!data.competition} href="./2023/entries/{data.competition}"><button disabled={!data.competition}>Database</button></a>
 </center>
