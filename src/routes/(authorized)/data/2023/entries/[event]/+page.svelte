@@ -28,7 +28,7 @@
     <p class="text-xl font-bold">Find match</p>
     <div class="box">
         <MatchSelector 
-            event={data.competition?.key??null} 
+            event={data.competition??null} 
             events={data.events} 
             bind:match={match} 
         />
