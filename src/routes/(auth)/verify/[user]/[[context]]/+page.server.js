@@ -31,7 +31,7 @@ export const actions = {
         const user = await User.findOne({ username:params.user });
         
         if(key == user?.flags?.verification_key){
-            user.flags.verification_key = "";
+            user.flags.verification_key = undefined;
             await user.save();
             throw redirect(307, '/login/n');
         }else{
