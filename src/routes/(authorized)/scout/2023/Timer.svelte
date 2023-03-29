@@ -46,3 +46,5 @@
     {/if}
     <p class = "bg-white border border-black rounded p-1 text-black font-extrabold text-xl px-1" bind:offsetHeight={h}>{toTimer(state.time)}</p>
 </div>
+
+<button on:click={()=>{state.time=0}}/>
