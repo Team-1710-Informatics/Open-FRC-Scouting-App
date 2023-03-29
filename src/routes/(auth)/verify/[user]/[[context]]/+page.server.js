@@ -32,6 +32,7 @@ export const actions = {
         
         if(key == user?.flags?.verification_key){
             user.flags.verification_key = undefined;
+            user.isModified = true;
             await user.save();
             throw redirect(307, '/login/n');
         }else{
