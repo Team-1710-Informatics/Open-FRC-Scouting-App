@@ -51,7 +51,7 @@ Like MongoDB, Vercel's free tier is more than enough for the app. Create a free 
 Give the project a unique, but relevant name, and change the 'Output Directory' from ```public``` to ```.svelte-kit```.
 
 ## Adding Environment Variables
-If you're using Vercel, you can configure the environment variables from your project. Otherwise, you can add them to the code in a new file called ```.env``` in the base directory. If you do it this way, just make sure the ```.env``` file isn't publically visible.
+If you're using Vercel, you can configure the environment variables from your project. Otherwise, you can add them to the code in a new file called ```.env``` in the base directory. If you do it this way, just make sure the ```.env``` file isn't publicly visible.
 
 These are the needed environment variables:
 ```
