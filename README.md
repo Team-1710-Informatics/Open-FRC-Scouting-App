@@ -68,6 +68,6 @@ This is the host serving the app. If you're using Vercel, set it to ```https://{
 
 If you're hosting the app locally, you should format it as ```http://localhost:5173```.
 
-On Vercel, once you set your environment variables, you can click 'Deploy,' and if everything goes well, you'll be good to go!
+On Vercel, once you set your environment variables, you can click 'Deploy,' and if everything has gone right so far, you'll be good to go!
 
-Otherwise, you may have to compile the project on your own. Assuming npm is installed, this can be done by running ```npm i``` followed by ```npm run build``` in the project directory.
+If hosting elsewhere, you may have to compile the project on your own. Assuming npm is installed, this can be done by running ```npm i``` followed by ```npm run build``` in the project directory.
