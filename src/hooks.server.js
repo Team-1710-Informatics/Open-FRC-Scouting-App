@@ -21,10 +21,12 @@ export async function handle({ event, resolve }) {
         throw redirect(307, "/logout");
     }
 
-    let res = await tba(`team/frc${user.team}/events/${new Date().getFullYear()}`);
-    
-    let c = currComp(res);
-    let n = nextComp(res);
+    if(user.team !== 0){
+        let res = await tba(`team/frc${user.team}/events/${new Date().getFullYear()}`);
+        
+        let c = currComp(res);
+        let n = nextComp(res);
+    }
 
     event.locals.user = {
         username: user.username,
