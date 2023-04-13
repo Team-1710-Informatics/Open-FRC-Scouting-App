@@ -20,12 +20,18 @@ export async function handle({ event, resolve }) {
     if(token && !user) {
         throw redirect(307, "/logout");
     }
+    
+    event.locals.competition = null;
+    event.locals.nextCompetition = null;
 
     if(user.team !== 0){
         let res = await tba(`team/frc${user.team}/events/${new Date().getFullYear()}`);
         
         let c = currComp(res);
         let n = nextComp(res);
+        
+        event.locals.competition = c;
+        event.locals.nextCompetition = n;
     }
 
     event.locals.user = {
@@ -37,8 +43,7 @@ export async function handle({ event, resolve }) {
         permissions: user.permissions
     }
 
-    event.locals.competition = c;
-    event.locals.nextCompetition = n;
+    
     
     return await resolve(event);
 }
